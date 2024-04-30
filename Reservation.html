@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marbella Hotel</title>
+    <link rel="stylesheet" href="StyleIndex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Länk till Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <!-- Gör logobilden -->
+        <a href="index.html" class="logo">
+            <img src="logohotel.jpg" alt="Hotel Logo" class="img-fluid" style="max-width: 130px; height: auto;">
+        </a>
+
+        <!-- Navigationsmeny -->
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="RoyalOceanSuite.html" class="dropbtn">Rooms</a>
+                <div class="dropdown-content">
+                    <a href="RoyalOceanSuite.html">ROYAL OCEAN SUITE</a>
+                    <a href="SUNSETOCEANFAMILYSUITE.html">SUNSET OCEAN FAMILY SUITE</a>
+                    <a href="sunsetfamilylagoon.html">SUNSET FAMILY LAGOON</a>
+                    <a href="beachvila.html">BEACH VILLA</a>
+                    <a href="oceanvila.html">OCEAN VILLA</a>
+                    <a href="oceansuite.html">SUNSET OCEAN SUITE</a>
+                </div>
+            </div>
+            <a href="Aktivitet.html">Activities</a>
+            <a href="resturang.html">Restaurant</a>
+            <a href="Images.html">Gallery</a>
+            <a class="btn" href="Reservation.html">BOOK ME</a>
+        </nav>
+        <!-- Ikoner för sökning och meny (hamburger-ikonen) -->
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" style="background: url(reservation.jpg) no-repeat;">
+                </div>
+                <div class="swiper-slide" style="background: url(resevaton3.jpg) no-repeat;">
+                </div>
+                <div class="swiper-slide" style="background: url(reservatin2.jpg) no-repeat;">
+
+                </div>
+                <div class="swiper-slide" style="background: url(reservatin4.jpg) no-repeat;">
+                </div>
+                <div class="swiper-slide" style="background: url(resevation6.jpg) no-repeat;">
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    <section class="reservation" id="reservation">
+        <h1 class="heading">Book now</h1>
+        <form action="" id="reservationForm">
+            <div class="container">
+                <div class="box">
+                    <p>Name <span>*</span></p>
+                    <input type="text" class="input" placeholder="Your name" required>
+                </div>
+                <div class="box">
+                    <p>Email <span>*</span></p>
+                    <input type="email" class="input" placeholder="Your email" required>
+                </div>
+                <div class="box">
+                    <p>Phone <span>*</span></p>
+                    <input type="tel" class="input" placeholder="Your phone number" required>
+                </div>
+                <div class="box">
+                    <p>Check in <span>*</span></p>
+                    <input type="date" class="input" required>
+                </div>
+                <div class="box">
+                    <p>Check out <span>*</span></p>
+                    <input type="date" class="input" required>
+                </div>
+                <div class="box">
+                    <p>Adults <span>*</span></p>
+                    <select name="Adults" class="input" required>
+                        <option value="1">1 Adult</option>
+                        <option value="2">2 Adults</option>
+                        <option value="3">3 Adults</option>
+                        <option value="4">4 Adults</option>
+                        <option value="5">5 Adults</option>
+                        <option value="6">6 Adults</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>Children<span>*</span></p>
+                    <select name="Children" class="input" required>
+                        <option value="0">0 Child</option>
+                        <option value="1">1 Child</option>
+                        <option value="2">2 Children</option>
+                        <option value="3">3 Children</option>
+                        <option value="4">4 Children</option>
+                        <option value="5">5 Children</option>
+                        <option value="6">6 Children</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>Rooms<span>*</span></p>
+                    <select name="Rooms" class="input" required>
+                        <option value="1">1 Room</option>
+                        <option value="2">2 Rooms</option>
+                        <option value="3">3 Rooms</option>
+                        <option value="4">4 Rooms</option>
+                        <option value="5">5 Rooms</option>
+                        <option value="6">6 Rooms</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>Room Type<span>*</span></p>
+                    <select name="Type" class="input" required>
+                        <option value="1">Royal Ocean Suite</option>
+                        <option value="2">Sunset Ocean Family Suite</option>
+                        <option value="3">Sunset Family Lagoon</option>
+                        <option value="4">Beach Villa</option>
+                        <option value="5">Ocean Villa</option>
+                        <option value="6">Sunset Ocean Suite</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" value="Check Availability" style="font-size: 20px; position: center
+            ;" class="btn">
+        </form>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> 444 6 200</a>
+                <a href="#"> <i class="fas fa-phone"></i> +960 684 4444</a>
+                <a href="#"> <i class="fas fa-envelope"></i> MarbellaHotel@gmail.com</a>
+                <a href="#"> <i class="fas fa-map"></i> Magudhuva Island, Gaafu Dhaalu Atoll, Republic of Maldives</a>
+            </div>
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Akrivitet</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Rooms</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Gallery</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Reservation</a>
+            </div>
+            <div class="box">
+                <h3>Extra links</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i>Refund policy</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Refund policy</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Refund policy</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Refund policy</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Refund policy</a>
+            </div>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+            <div class="credit">&copy; copyright 2024 by <span>Diana Sabet</span></div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

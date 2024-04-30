@@ -1,0 +1,789 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import 'swiper/swiper.min.css';
+@import 'swiper/modules/navigation.min.css';
+@import 'swiper/modules/pagination.min.css';
+
+:root {
+    --box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: "Oswald", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 2s linear;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgb(234, 206, 246);
+    border-radius: .2rem;
+}
+
+section {
+    padding: 5rem 7%;
+}
+
+.heading {
+    font-size: 4rem;
+    color: #d590f3;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 16px 48px;
+    background-color: #f9cbfb;
+    border-radius: 8px;
+    color: #eeeff5;
+    font-size: 27px;
+    cursor: pointer;
+    padding: 16px 32px;
+    max-width: 130px;
+    height: auto;
+}
+
+.btn:hover {
+    background-color: #fcb0f4;
+}
+
+.header {
+    background: rgb(255, 255, 255);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 9%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #000000;
+}
+
+.header .logo.i {
+    color: rgb(246, 249, 249);
+    padding-right: 8px;
+}
+
+.header .navbar a {
+    font-size: 27.2px;
+    color: #100f10;
+    margin: 0 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header .navbar a:hover {
+    color: rgb(216, 104, 226);
+    transform: scale(1.05);
+}
+
+.header .navbar .btn {
+    margin-top: 0;
+    color: rgb(8, 7, 7);
+    background-color: #fadbfb;
+
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    /* Lägg till övergångseffekt */
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 8px;
+    /* Runda hörn */
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 8px 16px;
+    font-size: 1rem;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect on dropdown links */
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change button background color on hover */
+.dropdown:hover .dropbtn {
+    background-color: #f0f0f0;
+}
+
+/* Change button color on hover */
+.dropdown:hover .dropbtn {
+    color: #060606;
+}
+
+/* Hover effect on BOOK ME button */
+.header .navbar .btn:hover {
+    background: #eab8ff;
+    color: #060606;
+}
+
+
+#menu-btn {
+    display: none;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbd8d8;
+    padding: 3px;
+}
+
+.home .swiper-slide {
+    min-height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.home .swiper-slide .content {
+    width: 80rem;
+    text-align: center;
+}
+
+.home .swiper-slide .content h3 {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #101113;
+    line-height: 1.1;
+    padding: 4rem 0;
+
+}
+
+.home .swiper-slide .content a {
+    font-size: 20px;
+
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    color: #000;
+}
+
+.swiper-button-prev :hover,
+.swiper-button-next:hover {
+    background: #d590f3;
+    color: #f6f7f8;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 32px;
+
+}
+
+/*Section*/
+/*Section*/
+.avaibility {
+    position: relative;
+}
+
+.avaibility .video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avaibility form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    background: rgba(227, 217, 217, 0.5);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    backdrop-filter: blur(5px);
+
+}
+
+
+.avaibility form .box {
+    flex: 2 2 13rem;
+}
+
+.avaibility form .box p {
+    font-size: 1.8rem;
+    color: #000;
+}
+
+.avaibility form .box .input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: #000;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+.avaibility form .btn {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    color: #000000;
+    background-color: #fdb6f0;
+    border: #f9cbfb;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.avaibility form .btn:hover {
+    background-color: #f597f5;
+
+}
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6rem;
+
+}
+
+.about .row .image {
+    flex: 1 1 30rem;
+}
+
+.about .row .image img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 51rem;
+    text-align: left;
+
+}
+
+.about .row .content h3 {
+    position: relative;
+    font-size: 3.5rem;
+    color: #e67be6;
+    padding: 2rem 0;
+    text-align: center;
+    top: 40%;
+}
+
+.about .row .content p {
+    font-size: 2rem;
+    color: #575557;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.room .swiper-slide {
+    background: #ffecfd;
+    border: .1rem solid rgb(8, 7, 7);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 4rem;
+}
+
+.room .swiper-slide .image {
+    height: 25rem;
+    width: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.room .swiper-slide .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.room .swiper-slide .image .price {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    background: #d590f3;
+    color: #000;
+    font-size: 1.7rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-transform: lowercase;
+}
+
+.room .swiper-slide .image .fa-shopping-cart {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: #fad5fe;
+    color: #000;
+    border-radius: 50%;
+}
+
+.room .swiper-slide .image .fa-shopping-cart:hover {
+    background: #e67ef2;
+    color: rgb(0, 0, 0);
+}
+
+.room .swiper-slide .content {
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.room .swiper-slide .content a {
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.room .swiper-slide .content p {
+    font-size: 1.6rem;
+    color: #7f7f7f;
+    padding: 0.5rem 0;
+    line-height: 1.5rem;
+}
+
+.room .swiper-slide .content .stars {
+    padding: 1rem 0;
+
+}
+
+.room .swiper-slide .content .stars i {
+    font-size: 1.7rem;
+    color: #50034d;
+}
+
+.room .swiper-slide .content .btn {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    /* Öka utrymmet runt knappen för en bättre visuell effekt */
+    color: #000000;
+    /* Ändra textfärg till vit för att öka kontrasten */
+    background-color: #fdb6f0;
+    /* Bakgrundsfärg för knappen */
+    border: #f9cbfb;
+    /* Ta bort kanten för en renare look */
+    border-radius: 0.5rem;
+    cursor: pointer;
+    /* Gör pekaren till en hand för att visa att knappen är klickbar */
+    transition: background-color 0.3s ease;
+}
+
+.Gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.image-container {
+    width: calc(25% - 10px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+.about2 .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    text-align: center;
+    align-items: center;
+}
+
+.about2 .row .image {
+    flex: 1 1 40rem;
+}
+
+.about2 .row .image img {
+    width: 40rem;
+    border-radius: 0.5rem;
+}
+
+.about2 .row .content1 {
+    flex: 1 1 40rem;
+}
+
+.about2 .row .content1 h3 {
+    font-size: 3rem;
+    color: #db84ec;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.about2 .row .content1 p {
+    line-height: 2;
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color: #060606;
+}
+
+.about2 .row .content1 .btn {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    color: #000000;
+    background-color: #fdb6f0;
+    border: #f9cbfb;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.about2 .row:nth-child(odd) {
+    flex-direction: row-reverse;
+    /* Reverse the order of flex items */
+    margin-top: 3rem 0;
+    flex-wrap: wrap-reverse;
+}
+
+.about2 .row:nth-child(odd) .content1 {
+    text-align: center;
+    /* Align text to the left for odd rows */
+}
+
+.footer {
+    background: #d1d1d1;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: #000000;
+}
+
+.footer .box-container .box a {
+    font-size: 1.6rem;
+    display: block;
+    color: #0a080b;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+    color: #ee74ea;
+    padding: 0.5rem;
+}
+
+.footer .box-container .box a:hover {
+    color: #ff99e0;
+}
+
+.footer .share {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.footer .share a {
+    color: #db84ec;
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    border-radius: 50%;
+    border: 0.1 solid var(black);
+    margin: 0.3rem;
+}
+
+.footer .share a:hover {
+    color: #512e58;
+    background: #d1d1d1;
+    transform: rotate(360deg);
+
+}
+
+.footer .credit {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 0.1rem solid black;
+    color: #0a0909;
+
+}
+
+.footer .credit span {
+    color: #d590f3;
+}
+
+
+/* reservation*/
+.reservation {
+    padding: 2rem;
+    border: 0.2rem solid rgb(119, 89, 126);
+    border-radius: 1.5rem;
+}
+
+.reservation .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.reservation .container .box {
+    flex: 1 1 40rem;
+}
+
+.reservation .container .box p {
+    font-size: 1.8rem;
+    color: #730375;
+    margin-bottom: 0.5rem;
+}
+
+.reservation .container .box .input {
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 0.1rem solid rgb(58, 55, 55);
+    border-radius: 0.5rem;
+    color: #000000;
+}
+
+.reservation .container .box .btn {
+    font-size: 3rem;
+    padding: 1rem 2rem;
+    color: #f983de;
+    background-color: #f032f6;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reservation .container .box .btn:hover {
+    background-color: #f86bee;
+}
+
+/* Royal Ocean suite*/
+.information .text p {
+    font-size: 1.5rem;
+    color: #575557;
+    text-align: center;
+    line-height: 2;
+    padding: 3rem 0;
+    font-size: 1.7rem;
+}
+
+.information .text a {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    color: #f7d5ef;
+    background-color: #000000;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.information .text a.btn:hover {
+    background-color: #754271;
+}
+
+.karta .row1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.karta .row1 .image {
+    flex: 1 1 40%;
+    max-width: 50%;
+
+}
+
+.karta .row1 .image img {
+    width: 100%;
+
+    border-radius: 0.5rem;
+}
+
+.karta .row1 .content1 {
+    flex: 5 5 30%;
+    text-align: center;
+}
+
+.karta .row1 .content1 h4 {
+    font-size: 2.5rem;
+    color: #db84ec;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.karta .row1 .content1 ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.karta .row1 .content1 li {
+    line-height: 2;
+    font-size: 1.8rem;
+    color: #060606;
+}
+
+.karta .row1 a.btn {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    color: #f7d5ef;
+    background-color: #000000;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.karta .row1 a.btn:hover {
+    background-color: #6f3c6c;
+
+}
+
+.Gallery1 .swiper-slide {
+    height: 56rem;
+    width: 25rem;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.Gallery1 .swiper-slide {
+    background-size: cover;
+    background-position: center;
+
+}
+
+.Gallery1 .swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Gallery1 .swiper-slide .icon {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    height: 100%;
+    width: 100%;
+    background: rgba(227, 217, 217, 0.5);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    backdrop-filter: blur(5px);
+
+}
+
+.Gallery1 .swiper-slide .icon i {
+    font-size: 6rem;
+    color: white;
+}
+
+.Gallery1 .swiper-slide:hover .icon {
+    display: flex;
+}

@@ -3,6 +3,8 @@
 @import 'swiper/modules/navigation.min.css';
 @import 'swiper/modules/pagination.min.css';
 
+
+
 :root {
     --box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
@@ -19,6 +21,50 @@
     transition: 2s linear;
 
 }
+
+
+body {
+    line-height: 1.7;
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.navbar a {
+    font-size: 27.2px;
+    color: #100f10;
+    margin: 0 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: rgb(216, 104, 226);
+    transform: scale(1.05);
+}
+
+.navbar .btn {
+    margin-top: 0;
+    color: rgb(8, 7, 7);
+    background-color: #fadbfb;
+}
+
+.btn-brand {
+    color: #100f10;
+    font-weight: 500;
+    border-color: violet;
+    background-color: #fadbfb;
+}
+
+.btn-brand:hover {
+    color: #000;
+    border-color: rgb(10, 10, 10);
+    background-color: #fadbfb;
+}
+
 
 html {
     font-size: 62.5%;
@@ -69,123 +115,6 @@ section {
 
 .btn:hover {
     background-color: #fcb0f4;
-}
-
-.header {
-    background: rgb(255, 255, 255);
-    box-shadow: var(--box-shadow);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 9%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
-
-.header .logo {
-    font-size: 40px;
-    font-weight: bolder;
-    color: #000000;
-}
-
-.header .logo.i {
-    color: rgb(246, 249, 249);
-    padding-right: 8px;
-}
-
-.header .navbar a {
-    font-size: 27.2px;
-    color: #100f10;
-    margin: 0 16px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.header .navbar a:hover {
-    color: rgb(216, 104, 226);
-    transform: scale(1.05);
-}
-
-.header .navbar .btn {
-    margin-top: 0;
-    color: rgb(8, 7, 7);
-    background-color: #fadbfb;
-
-}
-
-/* Dropdown container */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown button */
-.dropbtn {
-    background-color: transparent;
-    color: black;
-    padding: 12px 16px;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    /* Lägg till övergångseffekt */
-}
-
-/* Dropdown content */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(8px);
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    padding: 10px;
-    border-radius: 8px;
-    /* Runda hörn */
-}
-
-/* Dropdown links */
-.dropdown-content a {
-    color: black;
-    padding: 8px 16px;
-    font-size: 1rem;
-    text-decoration: none;
-    display: block;
-    transition: background-color 0.3s ease;
-}
-
-/* Hover effect on dropdown links */
-.dropdown-content a:hover {
-    background-color: #f0f0f0;
-}
-
-/* Show dropdown content on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Change button background color on hover */
-.dropdown:hover .dropbtn {
-    background-color: #f0f0f0;
-}
-
-/* Change button color on hover */
-.dropdown:hover .dropbtn {
-    color: #060606;
-}
-
-/* Hover effect on BOOK ME button */
-.header .navbar .btn:hover {
-    background: #eab8ff;
-    color: #060606;
-}
-
-
-#menu-btn {
-    display: none;
 }
 
 .home {
@@ -246,8 +175,6 @@ section {
 
 }
 
-/*Section*/
-/*Section*/
 .avaibility {
     position: relative;
 }
@@ -443,16 +370,11 @@ section {
 .room .swiper-slide .content .btn {
     font-size: 1.8rem;
     padding: 1rem 2rem;
-    /* Öka utrymmet runt knappen för en bättre visuell effekt */
     color: #000000;
-    /* Ändra textfärg till vit för att öka kontrasten */
     background-color: #fdb6f0;
-    /* Bakgrundsfärg för knappen */
     border: #f9cbfb;
-    /* Ta bort kanten för en renare look */
     border-radius: 0.5rem;
     cursor: pointer;
-    /* Gör pekaren till en hand för att visa att knappen är klickbar */
     transition: background-color 0.3s ease;
 }
 
@@ -529,14 +451,12 @@ section {
 
 .about2 .row:nth-child(odd) {
     flex-direction: row-reverse;
-    /* Reverse the order of flex items */
     margin-top: 3rem 0;
     flex-wrap: wrap-reverse;
 }
 
 .about2 .row:nth-child(odd) .content1 {
     text-align: center;
-    /* Align text to the left for odd rows */
 }
 
 .footer {
@@ -786,4 +706,373 @@ section {
 
 .Gallery1 .swiper-slide:hover .icon {
     display: flex;
+}
+
+/*Aktivitete*/
+.Aktivitet-home .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6rem;
+
+}
+
+.Aktivitet-home .row .image {
+    flex: 1 1 30rem;
+}
+
+.Aktivitet-home .row .image img {
+    width: 100%;
+}
+
+.Aktivitet-home .row .content {
+    flex: 1 1 51rem;
+    text-align: left;
+
+}
+
+.Aktivitet-home .row .content h3 {
+    position: relative;
+    font-size: 3.5rem;
+    color: #e67be6;
+    padding: 2rem 0;
+    text-align: center;
+    top: 40%;
+}
+
+.Aktivitet-home .row .content p {
+    line-height: 2;
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color: #060606;
+}
+
+
+
+.Aktivitetinfo .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    text-align: center;
+    align-items: center;
+}
+
+.Aktivitetinfo .row .image {
+    flex: 1 1 40rem;
+}
+
+.Aktivitetinfo .row .image img {
+    width: 110%;
+    height: 70%;
+    border-radius: 0.5rem;
+}
+
+.Aktivitetinfo .row .content1 {
+    flex: 1 1 30rem;
+    background: rgba(251, 235, 255, 0.7);
+    backdrop-filter: blur(5px);
+    position: relative;
+    left: 20%;
+    padding: 5%;
+}
+
+.Aktivitetinfo .row .content1 h1 {
+    font-size: 3rem;
+    color: #000000;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.Aktivitetinfo .row .content1 p {
+    font-size: 2rem;
+    color: #3e3e3e;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.Aktivitetinfo .row:nth-child(odd) {
+    flex-direction: row-reverse;
+    margin-top: 3rem 0;
+    flex-wrap: wrap-reverse;
+}
+
+.Aktivitetinfo .row:nth-child(odd) .content1 {
+    text-align: center;
+}
+
+.Aktivitetinfo .row1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    text-align: center;
+    align-items: center;
+}
+
+.Aktivitetinfo .row1 .image {
+    flex: 1 1 40rem;
+}
+
+.Aktivitetinfo .row1 .image img {
+    width: 110%;
+    height: auto;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+.Aktivitetinfo .row1 .content2 {
+    flex: 1 1 30rem;
+    background: rgba(251, 235, 255, 0.7);
+    backdrop-filter: blur(5px);
+    position: relative;
+    right: 20%;
+    padding: 5%;
+}
+
+.Aktivitetinfo .row1 .content2 h1 {
+    font-size: 3rem;
+    color: #000000;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.Aktivitetinfo .row1 .content2 p {
+    font-size: 2rem;
+    color: #3e3e3e;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.Aktivitetinfo .row1:nth-child(odd) {
+    flex-direction: row-reverse;
+    margin-top: 3rem 0;
+    flex-wrap: wrap-reverse;
+}
+
+.Aktivitetinfo .row1:nth-child(odd) .content2 {
+    text-align: center;
+}
+
+
+.Diving {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbd8d8;
+    padding: 2px;
+}
+
+.Diving .swiper-slide {
+    min-height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    color: #000;
+}
+
+.swiper-button-prev :hover,
+.swiper-button-next:hover {
+    background: #d590f3;
+    color: #f6f7f8;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 32px;
+
+}
+
+
+
+.Divinginfo p {
+    font-size: 2rem;
+    color: #3e3e3e;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+
+/*contact*/
+
+
+.contact {
+    padding: 2rem;
+    border: none;
+    border-radius: 1.5rem;
+}
+
+.contact .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact .container .box {
+    flex: 1 1 40rem;
+}
+
+.contact .container .box p {
+    font-size: 1.8rem;
+    color: #730375;
+    margin-bottom: 0.5rem;
+}
+
+.contact .container .box .input {
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 0.1rem solid rgb(58, 55, 55);
+    border-radius: 0.5rem;
+    color: #000000;
+}
+
+.contact .container .box .btn {
+    font-size: 3rem;
+    padding: 2rem 3rem;
+    color: #f983de;
+    background-color: #f032f6;
+    border: none;
+    border-radius: 0.8rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact .container .box .btn:hover {
+    background-color: #f86bee;
+}
+
+
+#Contact .box:focus {
+    box-shadow: none;
+    border-color: #eaa6cb;
+}
+
+
+
+.review .swiper-slide {
+    background: #ffecfd;
+    border: .1rem solid rgb(8, 7, 7);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 4rem;
+}
+
+.review .swiper-slide .image {
+    height: 25rem;
+    width: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.review .swiper-slide .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.review .swiper-slide .image .fa-quote-right {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: #fad5fe;
+    color: #000;
+    border-radius: 50%;
+}
+
+.review .swiper-slide .image .fa-quote-right:hover {
+    background: #e67ef2;
+    color: rgb(0, 0, 0);
+}
+
+.review .swiper-slide .content {
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.review .swiper-slide .content a {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.review .swiper-slide .content p {
+    font-size: 2rem;
+    color: #191717;
+    padding: 0.5rem 0;
+    line-height: 2.5rem;
+}
+
+.review .swiper-slide .content .stars {
+    padding: 1rem 0;
+
+}
+
+.review .swiper-slide .content .stars i {
+    font-size: 1.7rem;
+    color: #50034d;
+}
+
+.review .swiper-slide .content .btn {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    color: #000000;
+    background-color: #fdb6f0;
+    border: #f9cbfb;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-map {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-map .contact-info h3 {
+    font-size: 4rem;
+    color: #db84ec;
+}
+
+.contact-map .contact-item a {
+    color: #030203;
+    font-size: 2.5rem;
+}
+
+.contact-map .contact-item i {
+    color: #db84ec;
+    font-size: 1.5rem;
+}
+
+.contact-info {
+    width: 30%;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-item i {
+    margin-right: 10px;
+}
+
+.map {
+    width: 65%;
 }

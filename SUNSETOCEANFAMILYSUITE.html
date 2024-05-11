@@ -12,31 +12,49 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="index.html" class="logo">
-            <img src="logohotel.jpg" alt="Hotel Logo" class="img-fluid" style="max-width: 130px; height: auto;">
-        </a>
-
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <div class="dropdown">
-                <a href="RoyalOceanSuite.html" class="dropbtn">Rooms</a>
-                <div class="dropdown-content">
-                    <a href="RoyalOceanSuite.html">ROYAL OCEAN SUITE</a>
-                    <a href="SUNSETOCEANFAMILYSUITE.html">SUNSET OCEAN FAMILY SUITE</a>
-                    <a href="sunsetfamilylagoon.html">SUNSET FAMILY LAGOON</a>
-                    <a href="beachvila.html">BEACH VILLA</a>
-                    <a href="oceanvila.html">OCEAN VILLA</a>
-                    <a href="oceansuite.html">SUNSET OCEAN SUITE</a>
-                </div>
+    <nav class="navbar navbar-expand-lg bg-white py-3 sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logohotel.jpg" alt="logohotel" class="img-fluid" style="max-width: 120px; height: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Aktivitet.html">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resturang.html">Restaurant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Rooms
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="RoyalOceanSuite.html">ROYAL OCEAN SUITE</a></li>
+                            <li><a class="dropdown-item" href="SUNSETOCEANFAMILYSUITE.html">SUNSET OCEAN FAMILY
+                                    SUITE</a></li>
+                            <li><a class="dropdown-item" href="sunsetfamilylagoon.html">SUNSET FAMILY LAGOON</a></li>
+                            <li><a class="dropdown-item" href="beachvila.html">BEACH VILLA</a></li>
+                            <li><a class="dropdown-item" href="oceanvila.html">OCEAN VILLA</a></li>
+                            <li><a class="dropdown-item" href="oceansuite.html">SUNSET OCEAN SUITE</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="Reservation.html" class="btn btn-brand ml-auto" role="button">BOOK NOW</a>
             </div>
-            <a href="Aktivitet.html">Activities</a>
-            <a href="resturang.html">Restaurant</a>
-            <a href="Images.html">Gallery</a>
-            <a class="btn" href="Reservation.html">BOOK ME</a>
-        </nav>
-        <div id="menu-btn" class="fas fa-bars"></div>
-    </header>
+        </div>
+    </nav>
 
 
     <section class="home" id="home">
@@ -229,11 +247,11 @@
             </div>
             <div class="box">
                 <h3>Quick links</h3>
-                <a href="#"><i class="fas fa-arrow-right"></i>Home</a>
-                <a href="#"><i class="fas fa-arrow-right"></i>Akrivitet</a>
-                <a href="#"><i class="fas fa-arrow-right"></i>Rooms</a>
-                <a href="#"><i class="fas fa-arrow-right"></i>Gallery</a>
-                <a href="#"><i class="fas fa-arrow-right"></i>Reservation</a>
+                <a href="index.html"><i class="fas fa-arrow-right"></i>Home</a>
+                <a href="Aktivitet.html"><i class="fas fa-arrow-right"></i>Akrivitet</a>
+                <a href="Rooms.HTML"><i class="fas fa-arrow-right"></i>Rooms</a>
+                <a href="Contact.html"><i class="fas fa-arrow-right"></i>Contact</a>
+                <a href="Reservation.html"><i class="fas fa-arrow-right"></i>Reservation</a>
             </div>
             <div class="box">
                 <h3>Extra links</h3>
@@ -253,6 +271,9 @@
         </div>
     </section>
     <section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>

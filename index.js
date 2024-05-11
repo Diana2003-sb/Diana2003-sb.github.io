@@ -55,9 +55,7 @@ window.onload = function () {
 const galleryImages = [
     "Galler1.jpg",
     "Gallery2.jpeg",
-    "Gallery33.png",
-    "Gallery44.jpeg",
-    // Add more image URLs as needed
+    "Gallery33.png", "Gallery44.jpeg",
 ];
 
 function addImagesToGallery(images) {
@@ -69,7 +67,6 @@ function addImagesToGallery(images) {
         imgElement.alt = "Gallery Image";
         imgElement.classList.add("gallery-image");
 
-        // Create a container div for each image
         const imageContainer = document.createElement("div");
         imageContainer.classList.add("image-container");
         imageContainer.appendChild(imgElement);
@@ -107,6 +104,31 @@ document.addEventListener("DOMContentLoaded", function () {
             0: { slidesPerView: 1, },
             768: { slidesPerView: 3, },
             991: { slidesPerView: 4, }
+        }
+    });
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".review-slider", {
+        spaceBetween: 20,
+        grabCursor: true,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            0: { slidesPerView: 1, },
+            768: { slidesPerView: 2, },
+            991: { slidesPerView: 3, }
         }
     });
 });

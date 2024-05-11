@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import 'swiper/swiper.min.css';
+@import 'swiper/modules/navigation.min.css';
+@import 'swiper/modules/pagination.min.css';
+
+
+* {
+    font-family: "Oswald", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 2s linear;
+
+}
+
+body {
+    line-height: 1.7;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.navbar a {
+    font-size: 27.2px;
+    color: #100f10;
+    margin: 0 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: rgb(216, 104, 226);
+    transform: scale(1.05);
+}
+
+.navbar .btn {
+    margin-top: 0;
+    color: rgb(8, 7, 7);
+    background-color: #fadbfb;
+}
+
+.img {
+    width: 100%;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.shadow-on-hover {
+    transition: all 0.3s;
+}
+
+.shadow-on-hover:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    border-radius: 0;
+    padding: 14px 38px;
+}
+
+.btn-brand {
+    color: #100f10;
+    font-weight: 500;
+    border-color: violet;
+    background-color: #fadbfb;
+}
+
+.btn-brand:hover {
+    border-color: fuchsia;
+    background-color: #fadbfb;
+}
+
+.bg-cover {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.slide-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("resturang3.jpg");
+}
+
+.slide-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Resturang1.jpg");
+}
+
+.slide-4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("maldivefood4.jpg");
+}
+
+.slide-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("food.jpg");
+}
+
+#carouselExample h6::after,
+#carouselExample h6::before {
+    content: " ";
+    width: 20px;
+    height: 4px;
+    background-color: aliceblue;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 40px;
+    height: 70px;
+    margin: auto;
+}
+
+#about .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6rem;
+}
+
+#about img {
+    max-width: 105%;
+    height: auto;
+    flex: 1 1 30rem;
+}
+
+#about h1 {
+    font-size: 2.5rem;
+    color: #100f10;
+}
+
+#about .divider {
+    width: 60px;
+    height: 2px;
+    background-color: #100f10;
+    margin-bottom: 20px;
+    display: block;
+}
+
+#about p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#about .btn-brand {
+    color: #0a0909;
+    background-color: #fdb5ff;
+    border-color: #fadbfb;
+    font-weight: 500;
+}
+
+#about .btn-brand:hover {
+    background-color: #f7c5e0;
+    border-color: #f7c5e0;
+}
+
+.menu-text1 {
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.menu-text1 p {
+    max-width: 500px;
+    margin: 16PX auto 0 auto;
+}
+
+#menu .nav-pills .nav-link {
+    background-color: white;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: #100f10;
+    border-radius: 3rem;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+#menu .nav-pills .nav-link.active {
+    background-color: #f7c5e0;
+    color: #0a0909;
+}
+
+.menu-item .star {
+    color: #fdb5ff;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    border-radius: 0.6rem;
+    object-fit: cover;
+}
+
+#service {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("serviseresturant3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.service {
+    border: 2px solid rgba(188, 176, 176, 0.1);
+}
+
+.service .service-icon {
+    width: 80px;
+    height: 80px;
+    background: #fadbfb;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    display: inline-grid;
+    align-content: center;
+    text-align: center;
+}
+
+#Reservation .form-control {
+    border-radius: 0;
+}
+
+#Reservation .form-control:focus {
+    box-shadow: none;
+    border-color: #eaa6cb;
+}
+
+#Reservation input .form-control {
+    height: 47px;
+}
+
+.post {
+    position: relative;
+    overflow: hidden;
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.4s;
+}
+
+.post:hover img {
+    transform: scale(1.2);
+}
+
+.post .zoom-btn {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    color: #ea50f3;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.post:hover .zoom-btn {
+    opacity: 1;
+    background-color: rgb(245, 233, 243);
+}
+
+.footer {
+    background: #d1d1d1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    color: #000000;
+}
+
+.footer .box-container .box a {
+    font-size: 1rem;
+    display: block;
+    color: #0a080b;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+    color: #ee74ea;
+    padding: 0.5rem;
+}
+
+.footer .box-container .box a:hover {
+    color: #ff99e0;
+}
+
+.footer .share {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.footer .share a {
+    color: #db84ec;
+    font-size: 2rem;
+    width: 2rem;
+    height: 3rem;
+    line-height: 2.5rem;
+    border-radius: 8%;
+    border: 0.1 solid var(black);
+    margin: 0.3rem;
+}
+
+.footer .share a i {
+    font-size: 1.5rem;
+    color: #db84ec;
+}
+
+.footer .share a:hover {
+    color: #512e58;
+    background: #d1d1d1;
+    transform: rotate(360deg);
+
+}
+
+.footer .credit {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 0.1rem solid black;
+    color: #0a0909;
+
+}
+
+.footer .credit span {
+    color: #d590f3;
+}

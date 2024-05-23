@@ -14,149 +14,155 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-white py-3 sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="logohotel.jpg" alt="logohotel" class="img-fluid" style="max-width: 120px; height: auto;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Aktivitet.html">Activities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resturang.html">Restaurant</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Rooms
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="RoyalOceanSuite.html">ROYAL OCEAN SUITE</a></li>
-                            <li><a class="dropdown-item" href="SUNSETOCEANFAMILYSUITE.html">SUNSET OCEAN FAMILY
-                                    SUITE</a></li>
-                            <li><a class="dropdown-item" href="sunsetfamilylagoon.html">SUNSET FAMILY LAGOON</a></li>
-                            <li><a class="dropdown-item" href="beachvila.html">BEACH VILLA</a></li>
-                            <li><a class="dropdown-item" href="oceanvila.html">OCEAN VILLA</a></li>
-                            <li><a class="dropdown-item" href="oceansuite.html">SUNSET OCEAN SUITE</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <a href="Reservation.html" class="btn btn-brand ml-auto" role="button">BOOK NOW</a>
-            </div>
-        </div>
-    </nav>
-
-    <section class="home" id="home">
-        <div class="swiper home-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background: url(reservation.jpg) no-repeat;">
-                </div>
-                <div class="swiper-slide" style="background: url(resevaton3.jpg) no-repeat;">
-                </div>
-                <div class="swiper-slide" style="background: url(reservatin2.jpg) no-repeat;">
-
-                </div>
-                <div class="swiper-slide" style="background: url(reservatin4.jpg) no-repeat;">
-                </div>
-                <div class="swiper-slide" style="background: url(resevation6.jpg) no-repeat;">
-                </div>
-                ...
-            </div>
-            <div class="swiper-pagination"></div>
-
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-scrollbar"></div>
-        </div>
-    </section>
-    <section class="reservation" id="reservation">
-        <h1 class="heading">Book now</h1>
-        <form action="" id="reservationForm">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white py-3 sticky-top">
             <div class="container">
-                <div class="box">
-                    <p>Name <span>*</span></p>
-                    <input type="text" class="input" placeholder="Your name" required>
-                </div>
-                <div class="box">
-                    <p>Email <span>*</span></p>
-                    <input type="email" class="input" placeholder="Your email" required>
-                </div>
-                <div class="box">
-                    <p>Phone <span>*</span></p>
-                    <input type="tel" class="input" placeholder="Your phone number" required>
-                </div>
-                <div class="box">
-                    <p>Check in <span>*</span></p>
-                    <input type="date" class="input" required>
-                </div>
-                <div class="box">
-                    <p>Check out <span>*</span></p>
-                    <input type="date" class="input" required>
-                </div>
-                <div class="box">
-                    <p>Adults <span>*</span></p>
-                    <select name="Adults" class="input" required>
-                        <option value="1">1 Adult</option>
-                        <option value="2">2 Adults</option>
-                        <option value="3">3 Adults</option>
-                        <option value="4">4 Adults</option>
-                        <option value="5">5 Adults</option>
-                        <option value="6">6 Adults</option>
-                    </select>
-                </div>
-                <div class="box">
-                    <p>Children<span>*</span></p>
-                    <select name="Children" class="input" required>
-                        <option value="0">0 Child</option>
-                        <option value="1">1 Child</option>
-                        <option value="2">2 Children</option>
-                        <option value="3">3 Children</option>
-                        <option value="4">4 Children</option>
-                        <option value="5">5 Children</option>
-                        <option value="6">6 Children</option>
-                    </select>
-                </div>
-                <div class="box">
-                    <p>Rooms<span>*</span></p>
-                    <select name="Rooms" class="input" required>
-                        <option value="1">1 Room</option>
-                        <option value="2">2 Rooms</option>
-                        <option value="3">3 Rooms</option>
-                        <option value="4">4 Rooms</option>
-                        <option value="5">5 Rooms</option>
-                        <option value="6">6 Rooms</option>
-                    </select>
-                </div>
-                <div class="box">
-                    <p>Room Type<span>*</span></p>
-                    <select name="Type" class="input" required>
-                        <option value="1">Royal Ocean Suite</option>
-                        <option value="2">Sunset Ocean Family Suite</option>
-                        <option value="3">Sunset Family Lagoon</option>
-                        <option value="4">Beach Villa</option>
-                        <option value="5">Ocean Villa</option>
-                        <option value="6">Sunset Ocean Suite</option>
-                    </select>
+                <a class="navbar-brand" href="index.html">
+                    <img src="logohotel.jpg" alt="logohotel" class="img-fluid" style="max-width: 120px; height: auto;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Aktivitet.html">Activities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resturang.html">Restaurant</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Rooms
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="RoyalOceanSuite.html">ROYAL OCEAN SUITE</a></li>
+                                <li><a class="dropdown-item" href="SUNSETOCEANFAMILYSUITE.html">SUNSET OCEAN FAMILY
+                                        SUITE</a></li>
+                                <li><a class="dropdown-item" href="sunsetfamilylagoon.html">SUNSET FAMILY LAGOON</a>
+                                </li>
+                                <li><a class="dropdown-item" href="beachvila.html">BEACH VILLA</a></li>
+                                <li><a class="dropdown-item" href="oceanvila.html">OCEAN VILLA</a></li>
+                                <li><a class="dropdown-item" href="oceansuite.html">SUNSET OCEAN SUITE</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="Reservation.html" class="btn btn-brand ml-auto" role="button">BOOK NOW</a>
                 </div>
             </div>
-            <div class="form-goup text-center col-md-12">
-                <a href="Reservation.html" style="font-size: 2rem; background-color: rgb(245, 200, 223);"
-                    class="btn btn-brand">Check available</a></textarea>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <div class="swiper home-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background: url(reservation.jpg) no-repeat;">
+                    </div>
+                    <div class="swiper-slide" style="background: url(resevaton3.jpg) no-repeat;">
+                    </div>
+                    <div class="swiper-slide" style="background: url(reservatin2.jpg) no-repeat;">
+
+                    </div>
+                    <div class="swiper-slide" style="background: url(reservatin4.jpg) no-repeat;">
+                    </div>
+                    <div class="swiper-slide" style="background: url(resevation6.jpg) no-repeat;">
+                    </div>
+                    ...
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
             </div>
-        </form>
-    </section>
+        </section>
+        <section class="reservation" id="reservation">
+            <h1 class="heading">Book now</h1>
+            <form action="" id="reservationForm">
+                <div class="container">
+                    <div class="box">
+                        <p>Name <span>*</span></p>
+                        <input type="text" class="input" placeholder="Your name" required>
+                    </div>
+                    <div class="box">
+                        <p>Email <span>*</span></p>
+                        <input type="email" class="input" placeholder="Your email" required>
+                    </div>
+                    <div class="box">
+                        <p>Phone <span>*</span></p>
+                        <input type="tel" class="input" placeholder="Your phone number" required>
+                    </div>
+                    <div class="box">
+                        <p>Check in <span>*</span></p>
+                        <input type="date" class="input" required>
+                    </div>
+                    <div class="box">
+                        <p>Check out <span>*</span></p>
+                        <input type="date" class="input" required>
+                    </div>
+                    <div class="box">
+                        <p>Adults <span>*</span></p>
+                        <select name="Adults" class="input" required>
+                            <option value="1">1 Adult</option>
+                            <option value="2">2 Adults</option>
+                            <option value="3">3 Adults</option>
+                            <option value="4">4 Adults</option>
+                            <option value="5">5 Adults</option>
+                            <option value="6">6 Adults</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <p>Children<span>*</span></p>
+                        <select name="Children" class="input" required>
+                            <option value="0">0 Child</option>
+                            <option value="1">1 Child</option>
+                            <option value="2">2 Children</option>
+                            <option value="3">3 Children</option>
+                            <option value="4">4 Children</option>
+                            <option value="5">5 Children</option>
+                            <option value="6">6 Children</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <p>Rooms<span>*</span></p>
+                        <select name="Rooms" class="input" required>
+                            <option value="1">1 Room</option>
+                            <option value="2">2 Rooms</option>
+                            <option value="3">3 Rooms</option>
+                            <option value="4">4 Rooms</option>
+                            <option value="5">5 Rooms</option>
+                            <option value="6">6 Rooms</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <p>Room Type<span>*</span></p>
+                        <select name="Type" class="input" required>
+                            <option value="1">Royal Ocean Suite</option>
+                            <option value="2">Sunset Ocean Family Suite</option>
+                            <option value="3">Sunset Family Lagoon</option>
+                            <option value="4">Beach Villa</option>
+                            <option value="5">Ocean Villa</option>
+                            <option value="6">Sunset Ocean Suite</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-goup text-center col-md-12">
+                    <a href="Reservation.html" style="font-size: 2rem; background-color: rgb(245, 200, 223);"
+                        class="btn btn-brand">Check available</a></textarea>
+                </div>
+            </form>
+        </section>
+    </main>
 
 
 

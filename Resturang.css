@@ -34,6 +34,16 @@ a {
     transition: transform 0.3s ease-in-out;
 }
 
+.navbar-collapse {
+    display: flex !important;
+    justify-content: space-between;
+}
+
+.navbar-toggler {
+    border: none;
+    background: none;
+}
+
 .navbar a:hover {
     color: rgb(216, 104, 226);
     transform: scale(1.05);

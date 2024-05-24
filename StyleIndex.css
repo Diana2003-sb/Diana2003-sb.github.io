@@ -34,16 +34,6 @@ a {
     transition: all 0.4s;
 }
 
-.navbar-collapse {
-    display: flex !important;
-    justify-content: space-between;
-}
-
-.navbar-toggler {
-    border: none;
-    background: none;
-}
-
 .navbar a {
     font-size: 27.2px;
     color: #100f10;
